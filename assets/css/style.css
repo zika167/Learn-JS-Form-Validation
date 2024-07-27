@@ -1,0 +1,128 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Open Sans","sans-serif";
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* common */
+
+.btn:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,button,select,textarea {
+    padding: 0;
+    font-family: inherit;
+    color: inherit;
+    outline: none;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+/* main */
+
+body {
+    background-color: #EEE;
+}
+
+.form {
+    width: 45%;
+    margin: 80px auto 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 30px;
+}
+
+.form:has(:invalid) .form-submit {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.form-input.invalid {
+    border-color: red;
+}
+
+.heading {
+    font-size: 2.6rem;
+    font-weight: 600;
+}
+
+.desc {
+    margin-top: 30px;
+    color: #666;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.spacer {
+    margin: 20px 0;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 144.444%;
+}
+
+.form-input {
+    color: #333;
+    padding: 16px 8px;
+    border: 1.5px solid #d2d1d6;
+    border-radius: 4px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 144.444%;
+}
+
+.form-input:focus-within {
+    border-color: #77dae6;
+}
+
+.form-input::placeholder {
+    -webkit-text-fill-color: #d2d1d6;
+  }
+
+.form-message {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: red;
+}
+
+.form-submit {
+    margin-top: 10px;
+    color: #fff;
+    background: #77dae6;
+    width: 100%;
+    padding: 16px 6px;
+    border-radius: 6px;
+
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 142.857%;
+}
